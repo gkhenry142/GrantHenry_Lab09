@@ -1,0 +1,46 @@
+<html>
+
+ <head>
+ </head>
+
+<body>
+    
+<h1>Multiple Choice Quiz</h1>
+
+    <form action="Quiz.php" target="result" method="post">
+        <p>Question 1: What was the capital of Spain? </p>
+        <input type="radio" name="capital" value="Paris"> Paris
+        <input type="radio" name="capital" value="Madrid"> Madrid
+        <input type="radio" name="capital" value="Berlin"> Berlin
+        <input type="radio" name="capital" value="Venice"> Venice
+
+        <p>Question 2: What is the most popular sport in the United States?</p>
+        <input type="radio" name="sport" value="Soccer"> Soccer
+        <input type="radio" name="sport" value="Basketball"> Basketball
+        <input type="radio" name="sport" value="Football"> Football
+        <input type="radio" name="sport" value="Baseball"> Baseball
+
+        <p>Question 3: How many stars are on the American Flag?</p>
+        <input type="radio" name="stars" value="45"> 45
+        <input type="radio" name="stars" value="49"> 49
+        <input type="radio" name="stars" value="51"> 51
+        <input type="radio" name="stars" value="50"> 50
+
+        <p>Question 4: Which U.S. President created the Environmental Protection Agency (EPA)?</p>
+        <input type="radio" name="epa" value="Richard_Nixon"> Richard Nixon
+        <input type="radio" name="epa" value="Bill_Clinton"> Bill Clinton
+        <input type="radio" name="epa" value="John_F_Kennedy"> John F. Kennedy
+        <input type="radio" name="epa" value="Barack_Obama"> Barack Obama
+        
+        <p>Question 5: When was the original Super Mario Bros. game released in America?</p>
+        <input type="radio" name="mario" value="2004"> 2004
+        <input type="radio" name="mario" value="1973"> 1973
+        <input type="radio" name="mario" value="1985"> 1985
+        <input type="radio" name="mario" value="1994"> 1994
+        </br><input type="submit" name = "submitButton" value="Submit"></br>
+    </form>
+    <?php include 'Quiz.php';?>
+
+</body>
+
+</html>

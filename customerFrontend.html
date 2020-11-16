@@ -1,0 +1,32 @@
+<html>
+
+ <head>
+	 <link rel = "stylesheet" href = "style.css">
+	<h1>Web Store</h1>
+ </head>
+
+<body>
+<h2>Here, you can choose to buy from the four items we have available, have them shipped to you any way you like!</h2>
+<div id = "submissionForm">
+	<form id = "submitForm" action="customerBackend.php" method="post">
+        <p>Enter username: <input type = "text" id = "username" name="userName" value = ""></p>
+        <p>Enter password: <input type = "text" id = "password" name="password" value = ""></p>
+        <p>Pick your item here:</p>
+        Apples ($1.50/lb) <input type="checkbox" name="apples" value="apples" id = "apples"> Quantity: <input type="number" id="quantity1" name="quantity1" min="0" max="5" value = "0"></br>
+        Bread ($1.25/lb) <input type="checkbox" name="bread" value="bread" id = "bread"> Quantity: <input type="number" id="quantity2" name="quantity2" min="0" max="5" value = "0"></br>
+        Potatoes ($2.25/lb) <input type="checkbox" name="potatoes" value="potatoes" id = "potatoes"> Quantity: <input type="number" id="quantity3" name="quantity3" min="0" max="5" value = "0"></br>
+        Eggs ($1.50/dozen) <input type="checkbox" name="eggs" value="eggs" id = "eggs"> Quantity: <input type="number" id="quantity4" name="quantity4" min="0" max="5" value = "0"></br>
+        </br>
+        <p>Shipping type:</p>
+        <input type = "radio" id = "free" name = "shipping" value = "Free 7 day"> Free 7 day</br>
+        <input type = "radio" id = "fast" name = "shipping" value = "$50.00 overnight"> $50.00 overnight</br>
+        <input type = "radio" id = "normal" name = "shipping" value = "$5.00 three day"> $5.00 three day</br>
+        <p><input type="submit" name = "submitButton" id = "submitButton" value="Submit"></p>
+        </form>
+        <input type = "submit" id = "resetButton" value = "Reset" onClick ="window.location.reload(true)"> <!--Will reload page if clicked-->
+        <?php include 'customerBackend.php';?>
+</div>
+<script src = "formChecker.js" defer></script>
+</body>
+
+</html>
